@@ -1,4 +1,4 @@
-# cours-symfony-session-panier
+# symfony-Twin-Extension
 Code de départ et final de la vidéo sur la session avec Symfony
 
 # Installation
