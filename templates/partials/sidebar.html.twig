@@ -1,0 +1,20 @@
+<h3>ma sidebar</h3>
+
+<ul>
+{% for p in posts %}
+
+ <li><a href="{{ path('blog_post', {slug: p.slug }) }}">  {{ p.title }}</a></li>   
+{% endfor %} 
+
+</ul>
+
+<h3>Dérniers commentaire</h3>
+
+{% for c in comments %}
+
+{{ c.username }} ,<em> {{ c.publishedAt | localizeddate('medium') }} </em>
+
+<div class="well well-lg">
+{{ c.content }}
+</div>
+{% endfor %} 
